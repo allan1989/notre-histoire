@@ -1,0 +1,18 @@
+// BASE
+@import './base/reset';
+@import './base/typography';
+@import './base/general';
+
+// HELPERS
+@import './helpers/mixins';
+@import './helpers/accessibility';
+@import './helpers/animations';
+
+// COMPONENTS
+@import './components/header/header';
+@import './components/menu/menu';
+@import './components/mission/missionStatement';
+@import './components/team/team';
+@import './components/skills/skills';
+@import './components/map/map';
+@import './components/goals/goals';

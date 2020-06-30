@@ -1,0 +1,67 @@
+// MENU
+
+.menu {
+  position: absolute;
+  top: 170px;
+  right: 90px;
+  line-height: 1.4;
+}
+
+.menuIcon {
+ display: none;
+}
+
+.menuLink {
+  color: $white;
+  opacity: 0.25;
+  font-size: 12px;
+  font-weight: $hairline-weight;
+  text-decoration: none;
+  position: relative;
+  display: block;
+  padding: 0 1em;
+
+  &:hover {
+    font-weight: $normal-weight;
+    transform: scale(1.1);
+    opacity: 1;
+    transition: all .2s;
+  }
+}
+
+.menu.active {
+  visibility: visible;
+  height: auto;
+}
+
+@media screen and (max-width: 1210px){
+  .menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+    height: 0;
+  }
+
+  .menuIcon {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width: 25px;
+    height: 25px;
+    background-image: url('../scss/components/menu/img/menu.svg');
+    z-index: 2;
+  }
+
+  .menuLink {
+    background-color: #238a70;
+    opacity: 1;
+    padding: 1em;
+    &:hover {
+      transform: none;
+      opacity: 0.9;
+    }
+  }
+}

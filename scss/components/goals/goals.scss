@@ -1,0 +1,73 @@
+// NOS ENGAGEMENTS
+
+.goals {
+  color: $white;
+  margin: 90px auto 0 auto;
+  padding: 15.5em 0em 15.5em 20.8em;
+  background-image: url("../scss/components/goals/img/visuel-avocat.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.goalsTitle {
+  font-size: 81px;
+  font-weight: $bold-weight;
+  line-height: 0.86;
+  margin-bottom: 27px;
+}
+
+.goalsLink {
+  color: inherit;
+  text-decoration: none;
+  margin-left: 4px;
+  letter-spacing: 0.95px;
+  font-size: 17px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.goalsIcon {
+  margin-right: 18px;
+}
+
+@media screen and (max-width: 1386px){
+  .goals {
+    width: 100%;
+    background-size: 100% 100%;
+    padding: 10em 5em;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .goalsLink {
+    &:hover .goalsIcon {
+      animation: Wobble .60s infinite;
+    }
+  }
+}
+
+@media screen and (max-width: 870px){
+  .goals {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 645px){
+  .goals {
+    background-size: cover;
+    padding: 10em 0.5em;
+  }
+  .goalsTitle {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .goalsLink {
+    font-size: 14px;
+  }
+}

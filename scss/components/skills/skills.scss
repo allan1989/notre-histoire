@@ -1,0 +1,153 @@
+// SAVOIR - FAIRE
+
+.skills {
+  margin: 274px auto 0 auto;
+  padding-bottom: 12.5em;
+  position: relative;
+  width: 866px;
+  background-image: url('../scss/components/skills/img/img-bg-5.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom 92px left 14px;
+
+  &:before {
+    content: '';
+    width: 1px;
+    height: 137px;
+    background-color: $greyishBrown;
+    position: absolute;
+    top: -62px;
+    right: 182px;
+  }
+
+}
+
+.skillsInfos {
+  color: $white;
+  position: relative;
+  text-align: center;
+  transition: transform ease .2s;
+}
+
+.skillsInfos.one {
+  width: 433px;
+  height: 635px;
+  background-image: url('../scss/components/skills/img/visuel.jpg');
+
+  .skillsInfosNumber {
+    &::after {
+      content: '%';
+    }
+  }
+}
+
+.skillsInfos.two {
+  position: absolute;
+  top: 158px;
+  right: 0;
+  width: 433px;
+  height: 635px;
+  background-image: url('../scss/components/skills/img/rectangle.jpg');
+}
+
+.skillsInfos.three {
+  position: relative;
+  margin: auto;
+  width: 636px;
+  height: 433px;
+  background-image: url('../scss/components/skills/img/lab.jpg');
+}
+
+.skillsInfosText {
+  position: absolute;
+  top: 49%;
+  left: 50%;
+  transform: translate(-50%, -49%);
+}
+
+.skillsInfosNumber {
+  display: block;
+  font-weight: $bold-weight;
+  font-size: 120px;
+}
+
+.skillsInfosDescription {
+  font-size: 18px;
+  line-height: 1.44;
+  font-weight: $normal-weight;
+}
+
+.skillsWrapper {
+  &::before {
+    content: '';
+    width: 365px;
+    height: 323px;
+    background-image: url('../scss/components/skills/img/img-bg-3.jpg');
+    position: absolute;
+    top: -26px;
+    right: -251px;
+  }
+}
+
+@media screen and (max-width: 1400px){
+  .skillsWrapper {
+    &::before {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .skillsWrapper {
+   .skillsInfos {
+    &:hover {
+      transform: scale(1.2);
+      z-index: 1;
+      transition: transform ease .2s;
+    }
+   }
+  }
+}
+
+@media screen and (max-width: 937px){
+  .skills {
+    margin-top: 55px;
+  }
+}
+
+@media screen and (max-width: 879px){
+
+  .skills {
+    background-image: none;
+    width: 100%;
+    &::before {
+      display: none;
+    }
+  }
+
+  .skillsWrapper {
+    text-align: center;
+  }
+
+  .skillsInfos.two {
+    position: static;
+    top: 0;
+  }
+
+  .skillsInfos.one,
+  .skillsInfos.two {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 637px){
+  .skillsInfos.three {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 430px){
+  .skillsInfos.one,
+  .skillsInfos.two {
+    width: 100%;
+  }
+}

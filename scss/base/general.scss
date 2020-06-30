@@ -1,0 +1,12 @@
+body {
+  font-family: $Rubik;
+  background: url('../assets/background/avocat.png') right 0 top 68em no-repeat,
+              url('../assets/background/olive.png') left 0 top 136.6em no-repeat,
+              url('../assets/background/tournesol.png') right 0 top 210em no-repeat;
+}
+
+@media screen and (max-width: 1200px){
+  body {
+    background: none;
+  }
+}

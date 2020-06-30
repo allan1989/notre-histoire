@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/components/map/map.scss"
+    ],
+    "names": [],
+    "file": "map.css"
+}

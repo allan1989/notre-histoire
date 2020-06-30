@@ -1,0 +1,21 @@
+@-webkit-keyframes Wobble {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+@keyframes Wobble {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+/*# sourceMappingURL=animations.css.map */

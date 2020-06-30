@@ -1,0 +1,128 @@
+// HEADER
+
+.header {
+ color: $white;
+ margin: 0 auto;
+ background-image: url("../scss/components/header/img/img-header.jpg");
+ background-repeat: no-repeat;
+ background-position-y: bottom;
+ background-size: 100%;
+ padding: 25em 0 22.7em 21em;
+ position: relative; 
+}
+
+.headerTop {
+  position: absolute;
+  top: 5.2em;
+  left: 28.7em;
+}
+
+.headerTitle {
+  font-weight: $bold-weight;
+  font-size: 80px;
+  line-height: .89;
+  padding-bottom: 17px;
+}
+
+.headerLink {
+  color: inherit;
+  text-decoration: none;
+  margin-left: 4px;
+  letter-spacing: 0.95px;
+  font-size: 18px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.headerIcon {
+  margin-right: 18px;
+}
+
+@media screen and (max-width: 1500px){
+  .headerTop {
+    top: 12.2em;
+    left: 22.7em;
+  }
+}
+
+@media screen and (max-width: 1370px){
+  .header {
+    background-position-y: top;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .headerLink {
+    &:hover .headerIcon {
+      animation: Wobble .60s infinite;
+    }
+  }
+}
+
+@media screen and (max-width: 1050px){
+  .header {
+    padding-bottom: 11em;
+  }
+
+  .headerTop {
+    position: absolute;
+    top: 6.2em;
+    left: 16.7em;
+  }
+}
+
+@media screen and (max-width: 945px){
+  .header {
+    background-position-y: top;
+    padding-left: 4em;
+    padding-bottom: 2em;
+  }
+}
+
+@media screen and (max-width: 865px){
+  .headerTop {
+    top: 4.2em;
+    left: 13.7em;
+  }
+}
+
+@media screen and (max-width: 575px){
+
+  .header {
+    padding-bottom: 0;
+  }
+
+  .headerTop {
+    top: 4.2em;
+    left: 8.7em;
+  }
+
+  .headerTitle {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 560px){
+  .header {
+    padding-bottom: 0em;
+  }
+}
+
+@media screen and (max-width: 363px){
+  .header {
+    padding-top: 5em;
+    padding-bottom: 7em;
+    padding-left: 1em;
+  }
+
+  .headerTop {
+    top: 2.2em;
+    left: 4.7em;
+  }
+
+  .headerLink {
+    font-size: 14px;
+  }
+}

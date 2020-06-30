@@ -1,0 +1,121 @@
+// MAP
+
+.map {
+  padding-top: 60px;
+  text-align: center;
+  position: relative;
+
+  &::before {
+    content: '';
+    width: 1px;
+    height: 137px;
+    background-color: $greyishBrown;
+    position: absolute;
+    top: -136px;
+    right: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+}
+
+.mapTitle {
+  color: $viridian;
+  font-weight: $bold-weight;
+  font-size: 60px;
+  line-height: 0.98;
+  padding-bottom: 99px;
+}
+
+.mapVector {
+  height: 637px;
+}
+
+/* Tooltip */
+
+.toolTip {
+  color: $white;
+  background-color: $viridian;
+  padding: 40px 38px 40px 40px;
+  position: absolute;
+  top: 25px;
+  right: 0;
+  width: 277px;
+  height: 199px;
+  text-align: left;
+  z-index: 1;
+  pointer-events: all;
+}
+
+.toolTipCountry {
+  opacity: 0.52;
+  font-size: 13px;
+  font-weight: $normal-weight;
+  padding-bottom: 4px;
+}
+
+.toolTipProjectName {
+  font-weight: $bold-weight;
+  font-size: 17px;
+  padding-bottom: 10px;
+}
+
+.toolTipText {
+  font-size: 13px;
+  opacity: 0.52;
+  font-weight: $normal-weight;
+  padding-bottom: 30px;
+}
+
+.toolTipLink {
+  color: inherit;
+  text-decoration: none;
+  margin-left: 4px;
+  font-size: 11px;
+  font-weight: $bold-weight;
+  text-transform: uppercase;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:hover .toolTipIcon {
+    animation: Wobble .60s infinite;
+  }
+}
+
+.toolTipClose {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background-image: url("../assets//icons/ic-close.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.toolTipIcon {
+  margin-right: 18px;
+  position: relative;
+  top: 3px;
+}
+
+.jqvmap-pin {
+  pointer-events: none;
+}
+
+@media screen and (max-width: 870px){
+  .mapTitle {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 668px){
+  .toolTip {
+    display: none;
+  }
+}

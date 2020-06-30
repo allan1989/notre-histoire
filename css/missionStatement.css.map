@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,QAAQ,CAAC;EACP,KAAK,EAAE,MAAM;EACb,MAAM,EAAE,MAAM;CACf",
+    "sources": [
+        "../scss/components/equipe/missionStatement.scss"
+    ],
+    "names": [],
+    "file": "missionStatement.css"
+}

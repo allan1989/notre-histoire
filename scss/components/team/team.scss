@@ -1,0 +1,83 @@
+// TEAM
+
+.team {
+  width: 1030px;
+  margin: 0 auto;
+  margin-top: 228px;
+  position: relative;
+  padding: 8.5em 30em 2em 0;
+  background-image: url('../scss/components/team/img/ic-quote.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  &:before {
+    content: '';
+    width: 1px;
+    height: 137px;
+    background-color: $greyishBrown;
+    position: absolute;
+    top: -138px;
+    left: 397px;
+  }
+}
+
+.teamQuote {
+  color: $greyishBrown;
+  font-weight: $light-weight;
+  font-size: 30px;
+  line-height: 1.27;
+  margin-bottom: 24px;
+}
+
+.teamQuoteImage {
+  position: absolute;
+  top: 0;
+  right: 83px;
+}
+
+.teamQuoteAuthor {
+  color: $viridian;
+  font-size: 18px;
+  font-weight: $bold-weight;
+  margin-bottom: 2px;
+  text-transform: uppercase;
+  display: block;
+}
+
+.teamQuoteStatus {
+  color: $viridian;
+  font-size: 17px;
+  font-weight: $normal-weight;
+  margin-left: 3px;
+}
+
+@media screen and (max-width: 1030px){
+  .team {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 937px){
+  .team {
+    margin-top: 30px;
+    padding-right: 0;
+    background-position: center 0;
+    text-align: center;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .teamQuoteImage {
+    position: static;
+    display: block;
+    margin: 20px auto 0 auto;
+  }
+}
+
+@media screen and (max-width: 368px){
+  .teamQuoteImage {
+    width: 100%;
+  }
+}

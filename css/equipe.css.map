@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/components/equipe/equipe.scss"
+    ],
+    "names": [],
+    "file": "equipe.css"
+}
